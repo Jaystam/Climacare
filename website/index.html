@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js" defer></script>
     <title>Climacare</title>
 </head>
@@ -20,10 +21,10 @@
                 </div
             ></li>
             <li class="cards card-2">
-                <p>Zonsopkomst: | Zonsondergang:</p>
+                <p>Daglichtperiode</p>
                 <div>
-                    <p class="zonsopkomst"></p>
-                    <p class="zonsondergang"></p>
+                    <p class="zonsopkomst">Zonsopkomst:</p>
+                    <p class="zonsondergang">Zonsondergang:</p>
                 </div>
             </li>
             <li class="cards card-3">
@@ -33,9 +34,9 @@
                 </div>
             </li>
             <li class="cards card-4">
-                <p></p>
+                <p>Energieverbruik grafiek</p>
                 <div>
-
+                    <canvas id="js--chart"></canvas>
                 </div>
             </li>
             <li class="cards card-5">

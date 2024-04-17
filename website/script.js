@@ -26,3 +26,57 @@ fetch('https://api.sunrisesunset.io/json?lat=52.37403&lng=4.88969')
         document.querySelector('.zonsopkomst').textContent += ` ${data.results.sunrise}`;
         document.querySelector('.zonsondergang').textContent += ` ${data.results.sunset}`;
     });
+
+
+const labels = [
+    "Maandag",
+    "Dinsdag",
+    "Woensdag",
+    "Donderdag",
+    "Vrijdag",
+    "Zaterdag",
+    "Zondag"
+];
+
+const data = {
+    labels: labels,
+    datasets: [
+        {
+            label: "Energieverbruik in KwH",
+            data: [28, 10, 40, 16, 9, 8, 11],
+            backgroundColor: 'white',
+            borderColor: 'black '
+        }
+    ]
+}
+
+const config = {
+    type: 'line',
+    data: data,
+    options: {
+        scales: {
+            x: {
+                ticks: {
+                    color: 'black'
+                }
+            },
+            y: {
+                ticks: {
+                    color: 'black'
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                labels: {
+                    color: 'black'
+                }
+            }
+        }
+    }
+};
+
+
+
+
+new Chart(document.getElementById("js--chart"), config);
