@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <img src="../logo/climacare.png" alt="Logo van Climacare">
+        <img src="logo/climacare.png" alt="Logo van Climacare">
     </header>
     <main>
         <ul>
@@ -35,7 +35,7 @@
             </li>
             <li class="cards card-4">
                 <p>Energieverbruik grafiek</p>
-                <div>
+                <div class="chart-container">
                     <canvas id="js--chart"></canvas>
                 </div>
             </li>
@@ -46,9 +46,19 @@
                 </div>
             </li>
             <li class="cards card-6">
-                <p></p>
+                <p>Licht regeling</p>
                 <div>
-
+                    <div class="dropdown-aantitle">Aan vanaf:</div>
+                    <select id="dropdown-aan">
+                        <option>01:00</option>
+                        <option>02:00</option>
+                    </select>
+                    <div class="dropdown-uittitle">Uit vanaf:</div>
+                    <select id="dropdown-uit">
+                        <option>01:00</option>
+                        <option>02:00</option>
+                    </select>
+                </div>
                 </div>
             </li>
         </ul>

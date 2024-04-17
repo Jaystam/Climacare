@@ -17,7 +17,7 @@ header{
     justify-content: center;
     align-items: center;
     background-color: black;
-    height: 15%;
+    height: 5%;
     padding: 1rem;
 }
 
@@ -75,3 +75,50 @@ main > ul{
     font-size: 3rem;
 }
 
+.card-2 > div {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+div > .zonsopkomst {
+    margin-right: 2rem;
+}
+
+.card-4 {
+    height: 30rem;
+}
+
+.card-4 > .chart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-6 > div {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+div > .dropdown-aantitle {
+    margin-right: 2rem;
+}
+
+
+div > .dropdown-uittitle {
+    margin-left: 20rem;
+    margin-right: 2rem;
+}
+
+.card-6 > div > select {
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    color: white;
+    background-color: black;
+}
